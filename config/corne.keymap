@@ -51,15 +51,15 @@
             bindings = <
 &kp ES_ESCAPE_CHARACTER  &kp ES_Q            &kp ES_W            &kp ES_E                &kp ES_R              &kp ES_T    &kp ES_Y   &kp ES_U               &kp ES_I                 &kp ES_O            &kp ES_P                   &kp BSPC
 &kp TAB                  &HRL LEFT_GUI ES_A  &HRL LEFT_ALT ES_S  &HRL LEFT_CONTROL ES_D  &HRL LEFT_SHIFT ES_F  &kp ES_G    &kp ES_H   &HRM RIGHT_SHIFT ES_J  &HRM RIGHT_CONTROL ES_K  &HRM LEFT_ALT ES_L  &HRM RIGHT_GUI ES_N_TILDE  &kp ES_SQT
-&kp CAPS                 &kp ES_Z            &kp ES_X            &kp ES_C                &kp ES_V              &kp ES_B    &kp ES_N   &kp ES_M               &kp ES_COMMA             &kp ES_DOT          &kp ES_MINUS               &kp ES_DOUBLE_QUOTES
+&kp CAPS                 &kp ES_Z            &kp ES_X            &kp ES_C                &kp ES_V              &kp ES_B    &kp ES_N   &kp ES_M               &kp ES_COMMA             &kp ES_DOT          &kp ES_MINUS               &kp ES_DQT
                                                                  &mo 1                   &mo 2                 &kp RET     &kp SPACE  &mo 3                  &kp RALT
             >;
         };
 
         spanish {
             bindings = <
-&trans  &trans  &trans  &trans            &trans        &trans    &trans  &trans         &trans  &trans             &trans        &trans
-&trans  &trans  &trans  &kp GRAVE         &kp ES_ACUTE  &trans    &trans  &kp ES_UMLAUT  &trans  &kp ES_MIDDLE_DOT  &kp ES_TILDE  &trans
+&trans  &trans  &trans  &trans            &trans        &trans    &trans  &trans         &trans  &trans             &trans        &kp DELETE
+&trans  &trans  &trans  &kp ES_GRAVE      &kp ES_ACUTE  &trans    &trans  &kp ES_UMLAUT  &trans  &kp ES_MIDDLE_DOT  &kp ES_TILDE  &trans
 &trans  &trans  &trans  &kp ES_C_CEDILLA  &trans        &trans    &trans  &trans         &trans  &trans             &trans        &trans
                         &trans            &trans        &trans    &trans  &trans         &trans
             >;
