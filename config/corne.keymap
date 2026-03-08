@@ -52,7 +52,7 @@
 &kp ESC   &kp ES_Q            &HRL RIGHT_ALT ES_W  &kp ES_E                &kp ES_R              &kp ES_T    &kp ES_Y   &kp ES_U               &kp ES_I                 &HRM RALT ES_O      &kp ES_P                   &kp BSPC
 &kp TAB   &HRL LEFT_GUI ES_A  &HRL LEFT_ALT ES_S   &HRL LEFT_CONTROL ES_D  &HRL LEFT_SHIFT ES_F  &kp ES_G    &kp ES_H   &HRM RIGHT_SHIFT ES_J  &HRM RIGHT_CONTROL ES_K  &HRM LEFT_ALT ES_L  &HRM RIGHT_GUI ES_N_TILDE  &kp ES_SQT
 &kp CAPS  &kp ES_Z            &kp ES_X             &kp ES_C                &kp ES_V              &kp ES_B    &kp ES_N   &kp ES_M               &kp ES_COMMA             &kp ES_DOT          &kp ES_MINUS               &kp ES_DQT
-                                                   &mo 1                   &mo 2                 &kp RET     &kp SPACE  &mo 3                  &none
+                                                   &mo 1                   &mo 2                 &kp RET     &kp SPACE  &mo 3                  &mo 4
             >;
         };
 
@@ -80,7 +80,7 @@
             >;
         };
 
-        raise_layer {
+        control {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -89,9 +89,27 @@
 
             bindings = <
 &kp F1      &kp F2             &kp F3        &kp F4            &kp F5        &kp F6             &kp F7          &kp F8          &kp F9        &kp F10          &kp F11               &kp F12
-&none       &kp C_VOLUME_DOWN  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_VOLUME_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&to 5       &kp C_VOLUME_DOWN  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_VOLUME_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
 &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4       &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &kp PRINTSCREEN       &none
                                              &trans            &trans        &kp SPACE          &kp RET         &trans          &trans
+            >;
+        };
+
+        layers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &to 5   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        DeadLock {
+            bindings = <
+&mt TAB ESC  &kp ES_N1  &kp ES_N2  &kp NUMBER_3      &kp NUMBER_4    &kp ES_R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp ES_F     &kp ES_A   &kp ES_S   &kp ES_W          &kp ES_D        &kp ES_Q        &trans  &trans  &trans  &trans  &trans  &trans
+&kp ES_B     &kp ES_Z   &kp ES_X   &kp ES_C          &kp ES_V        &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ES_SPACE    &trans  &trans  &to 0
             >;
         };
     };
